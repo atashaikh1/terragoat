@@ -16,6 +16,10 @@ resource aws_ecr_repository "repository" {
   })
 }
 
+
+
+
+
 locals {
   docker_image = "${data.aws_caller_identity.current.account_id}.dkr.ecr.${var.region}.amazonaws.com/${aws_ecr_repository.repository.name}"
 }
