@@ -13,7 +13,7 @@ resource azurerm_kubernetes_cluster "k8s_cluster" {
   }
   addon_profile {
     oms_agent {
-      enabled = false
+      enabled = true
     }
     kube_dashboard {
       enabled = true
